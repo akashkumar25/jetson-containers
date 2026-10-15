@@ -24,7 +24,7 @@ def llama_cpp(version, default=False, flags=GGUF_FLAGS):
         'LLAMA_CPP_VERSION': version[1:] if cpp else None,
         'LLAMA_CPP_VERSION_PY': '0.3.22' if cpp else version,
         'LLAMA_CPP_BRANCH': version if cpp else None,
-        'LLAMA_CPP_BRANCH_PY': 'main' if cpp else f'v{version}',
+        'LLAMA_CPP_BRANCH_PY': 'v0.3.22' if cpp else f'v{version}',
         'LLAMA_CPP_FLAGS': flags,
         'CUDA_ARCHITECTURES': ';'.join([str(x) for x in CUDA_ARCHITECTURES]),
     }
